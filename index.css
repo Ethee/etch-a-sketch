@@ -1,0 +1,29 @@
+:root{
+    --grid-col: 1;
+    --grid-row: 1;
+}
+body{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+button{
+    height: 30px;
+    width: 60px;
+    position: relative;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+#playArea{
+    width: 900px;
+    height: 900px;
+    display: grid;
+    grid-template-columns: repeat(var(--grid-col), minmax(0, 1fr));
+    grid-template-rows: repeat(var(--grid-row), minmax(0, 1fr));
+    border: 1px solid #000;
+    margin-top: 8px;
+}
+.sketch{
+    margin: 0px;
+    border: 1px solid #000;
+}
